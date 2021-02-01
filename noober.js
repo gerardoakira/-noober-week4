@@ -19,7 +19,7 @@ async function pageLoaded() {
       return `${rideLeg.numberOfPassengers} Passengers`
     }
   }
-  function LevelOfService(ride){
+  function levelOfService(ride){
     if (ride.length > 1) {
       return `Noober Pool`
     } else if (ride[0].purpleRequested==true) {
@@ -31,7 +31,7 @@ async function pageLoaded() {
     }
   }
 
-  function rideDisplay (ride) {
+  function rideDisplay(ride) {
     
     let outputElement = document.querySelector('.rides')
     outputElement.insertAdjacentHTML('beforeend', `

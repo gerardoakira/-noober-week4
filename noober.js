@@ -37,13 +37,13 @@ async function pageLoaded() {
     outputElement.insertAdjacentHTML('beforeend', `
       <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
       <i class="fas fa-car-side"></i>
-      <span>${LevelOfService(ride)}</span>
+      <span>${levelOfService(ride)}</span>
       </h1> 
       `)
 
     for (let i = 0; i < ride.length; i++) {
 
-      if(LevelOfService(ride)=='Noober Purple'){
+      if(levelOfService(ride)=='Noober Purple'){
       let outputElement = document.querySelector('.rides')
       outputElement.insertAdjacentHTML('beforeend', `
       <div class="border-4 border-purple-500 p-4 my-4 text-left">
